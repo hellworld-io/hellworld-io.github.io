@@ -1,0 +1,46 @@
+# Site settings
+title: HellWorld.io Contents
+email: coma333ryu@gmail.com
+
+description: "Welcome to the Hell World !!!"
+baseurl: "/contents"
+
+# url: "http://yourdomain.com"
+
+twitter_username: Coma333
+github_username: coma333ryu
+
+# Build settings
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+lsi: false
+excerpt_separator: "\n\n"
+
+kramdown:
+  auto_ids: true
+  input: GFM
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+
+redcarpet:
+    extensions:
+      - no_intra_emphasis
+      - fenced_code_blocks
+      - tables
+      - strikethrough
+      - superscript
+      - autolink
+      - hard_wrap
+
+safe: true
+highlighter: pygments
+lsi: false
+
+permalink: pretty
+
+paginate: 10
+
+gems:
+  - jekyll-redirect-from
+  - jemoji
