@@ -9,6 +9,7 @@ baseurl: ""
 
 twitter_username: Coma333
 github_username: coma333ryu
+facebook_username: jeongbu.yun
 
 # Build settings
 markdown: redcarpet
