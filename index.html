@@ -5,6 +5,11 @@ layout: default
 
 	<div class="container pt">
 		<div class="row mt centered">
+{% for post in site.posts %}
+{{ post.categories }}
+{{ post.tag }}<br/>
+{% endfor %}
+
 			<div class="col-lg-4">
 				<a class="zoom green" href="work01.html"><img class="img-responsive" src="/assets/img/portfolio/port01.jpg" alt="" /></a>
 				<p>APE</p>
