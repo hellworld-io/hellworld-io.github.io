@@ -2,7 +2,9 @@
   "categories" :[
     {"id" : "Daily"},
     {"id" : "Book"},
-    {"id" : "English"}
+    {"id" : "English"},
+    {"id" : "Language"},
+    {"id" : "Development"},
+    {"id" : "Canada"}
   ]
-
 }
