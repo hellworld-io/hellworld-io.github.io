@@ -5,13 +5,14 @@ layout: default
 
 	<div class="container pt">
 		<div class="row mt centered">
-			{% for cate in site.data.categories.categories %}
-				{{cate.id}}
-			{% endfor %}
+			{% for cate in site.data.categories.categories limit: 3 %}
 			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="/assets/img/portfolio/port01.jpg" alt="" /></a>
-				<p>APE</p>
+				<a class="zoom green" href="work01.html"><img class="img-responsive" src="/assets/img/{{cate.id}}.png" alt="{{cate.id}}" width="400" height="300" /></a>
+				<p>{{cate.id}}</p>
 			</div>
+			{% endfor %}
+
+			<!--
 			<div class="col-lg-4">
 				<a class="zoom green" href="work01.html"><img class="img-responsive" src="/assets/img/portfolio/port02.jpg" alt="" /></a>
 				<p>RAIDERS</p>
@@ -20,9 +21,17 @@ layout: default
 				<a class="zoom green" href="work01.html"><img class="img-responsive" src="/assets/img/portfolio/port03.jpg" alt="" /></a>
 				<p>VIKINGS</p>
 			</div>
+			-->
 		</div><!-- /row -->
 		<div class="row mt centered">
+			{% for cate in site.data.categories.categories limit: 3 offset: 3 %}
 			<div class="col-lg-4">
+				<a class="zoom green" href="work01.html"><img class="img-responsive" src="/assets/img/{{cate.id}}.png" alt="{{cate.id}}" width="400" height="300"/></a>
+				<p>{{cate.id}}</p>
+			</div>
+			{% endfor %}
+
+			<!-- div class="col-lg-4">
 				<a class="zoom green" href="work01.html"><img class="img-responsive" src="/assets/img/portfolio/port04.jpg" alt="" /></a>
 				<p>YODA</p>
 			</div>
@@ -33,7 +42,7 @@ layout: default
 			<div class="col-lg-4">
 				<a class="zoom green" href="work01.html"><img class="img-responsive" src="/assets/img/portfolio/port06.jpg" alt="" /></a>
 				<p>CHIEFS</p>
-			</div>
+			</div -->
 		</div><!-- /row -->
 	</div><!-- /container -->
 
