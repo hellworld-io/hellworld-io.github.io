@@ -7,7 +7,7 @@ layout: default
 		<div class="row mt centered">
 			{% for cate in site.data.categories.categories limit: 3 %}
 			<div class="col-lg-4">
-				<a class="zoom green" href="categoryList"><img class="img-responsive" src="/assets/img/{{cate.id}}.png" alt="{{cate.id}}" width="400" height="300" /></a>
+				<a class="zoom green" href="categoryList/?cate={{cate.id}}"><img class="img-responsive" src="/assets/img/{{cate.id}}.png" alt="{{cate.id}}" width="400" height="300" /></a>
 				<p>{{cate.id}}</p>
 			</div>
 			{% endfor %}
@@ -15,7 +15,7 @@ layout: default
 		<div class="row mt centered">
 			{% for cate in site.data.categories.categories limit: 3 offset: 3 %}
 			<div class="col-lg-4">
-				<a class="zoom green" href="categoryList"><img class="img-responsive" src="/assets/img/{{cate.id}}.png" alt="{{cate.id}}" width="400" height="300"/></a>
+				<a class="zoom green" href="categoryList?cate={{cate.id}}"><img class="img-responsive" src="/assets/img/{{cate.id}}.png" alt="{{cate.id}}" width="400" height="300"/></a>
 				<p>{{cate.id}}</p>
 			</div>
 			{% endfor %}
