@@ -1,10 +1,10 @@
 {
   "categories" :[
-    {"id" : "Daily"},
-    {"id" : "Book"},
-    {"id" : "English"},
-    {"id" : "Languages"},
-    {"id" : "Development"},
+    {"id" : "daily"},
+    {"id" : "book"},
+    {"id" : "english"},
+    {"id" : "languages"},
+    {"id" : "development"},
     {"id" : "Canada"}
   ]
 }
