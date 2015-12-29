@@ -20,82 +20,89 @@ layout: default
             case "languages" : document.getElementById("languages").style.display = "block"; break;
             case "development" : document.getElementById("development").style.display = "block"; break;
             case "Canada" : document.getElementById("Canada").style.display = "block"; break;
-            default : document.getElementById("noTagInCategory").style.display = "block"; break;
         }
-
-
     }
 </script>
 
 <div id="white">
     <div class="container">
         <div class="row">
-            <div id="noTagInCategory" class="col-lg-8 col-lg-offset-2" style="display: none">
-                <p>There are no post contents</p>
-            </div>
-
             <div id="daily" class="col-lg-8 col-lg-offset-2" style="display: none">
-            {% for categoryPost in site.categories.daily %}
-                    <h3>{{categoryPost.title}}</h3>
-                    <p><bd> {{categoryPost.date | date: "%b %-d, %Y"}}</bd></p>
-                    <p>{{ categoryPost.excerpt }}</p>
-                    <p><a href="#">Continue Reading...</a></p>
-            {% endfor %}
+                {% if site.categories.daily == null %}
+                    <h3>There are no daily post contents</h3>
+                {% else %}
+                    {% for categoryDaily in site.categories.daily %}
+                        <h3>{{categoryDaily.title}}</h3>
+                        <p><bd> {{categoryDaily.date | date: "%b %-d, %Y"}}</bd></p>
+                        <p>{{ categoryDaily.excerpt }}</p>
+                        <p><a href="#">Continue Reading...</a></p>
+                    {% endfor %}
+                {% endif %}
             </div>
 
             <div id="book" class="col-lg-8 col-lg-offset-2" style="display: none">
-            {% for category in site.categories.book %}
-                <p><img src="/assets/img/user.png" width="50px" height="50px"> <ba>Stanley Stinson</ba></p>
-                <p><bd>{{category.tag}} January 18, 2014</bd></p>
-                <h4>The Amazing Spiderman</h4>
-                <p><b>Spider-Man</b> is a fictional character, a comic book superhero that appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (cover-dated Aug. 1962). </p>
-                <p>Lee and Ditko conceived the character as an orphan being raised by his Aunt May and Uncle Ben, and as a teenager, having to deal with the normal struggles of adolescence in addition to those of a costumed crimefighter.</p>
-                <p><a href="blog01.html">Continue Reading...</a></p>
-            {% endfor %}
+                {% if site.categories.book == null %}
+                    <h3>There are no book post contents</h3>
+                {% else %}
+                    {% for categoryBook in site.categories.book %}
+                        <h3>{{categoryBook.title}}</h3>
+                        <p><bd> {{categoryBook.date | date: "%b %-d, %Y"}}</bd></p>
+                        <p>{{ categoryBook.excerpt }}</p>
+                        <p><a href="#">Continue Reading...</a></p>
+                    {% endfor %}
+                {% endif %}
             </div>
 
             <div id="english" class="col-lg-8 col-lg-offset-2" style="display: none">
-                {% for category in site.categories.english %}
-                <p><img src="/assets/img/user.png" width="50px" height="50px"> <ba>Stanley Stinson</ba></p>
-                <p><bd>{{category.tag}} January 18, 2014</bd></p>
-                <h4>The Amazing Spiderman</h4>
-                <p><b>Spider-Man</b> is a fictional character, a comic book superhero that appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (cover-dated Aug. 1962). </p>
-                <p>Lee and Ditko conceived the character as an orphan being raised by his Aunt May and Uncle Ben, and as a teenager, having to deal with the normal struggles of adolescence in addition to those of a costumed crimefighter.</p>
-                <p><a href="blog01.html">Continue Reading...</a></p>
-                {% endfor %}
+                {% if site.categories.english == null %}
+                    <h3>There are no English post contents</h3>
+                {% else %}
+                    {% for categoryEnglish in site.categories.english %}
+                        <h3>{{categoryEnglish.title}}</h3>
+                        <p><bd> {{categoryEnglish.date | date: "%b %-d, %Y"}}</bd></p>
+                        <p>{{ categoryEnglish.excerpt }}</p>
+                        <p><a href="#">Continue Reading...</a></p>
+                    {% endfor %}
+                {% endif %}
             </div>
 
             <div id="languages" class="col-lg-8 col-lg-offset-2" style="display: none">
-                {% for category in site.categories.languages %}
-                <p><img src="/assets/img/user.png" width="50px" height="50px"> <ba>Stanley Stinson</ba></p>
-                <p><bd>{{category.tag}} January 18, 2014</bd></p>
-                <h4>The Amazing Spiderman</h4>
-                <p><b>Spider-Man</b> is a fictional character, a comic book superhero that appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (cover-dated Aug. 1962). </p>
-                <p>Lee and Ditko conceived the character as an orphan being raised by his Aunt May and Uncle Ben, and as a teenager, having to deal with the normal struggles of adolescence in addition to those of a costumed crimefighter.</p>
-                <p><a href="blog01.html">Continue Reading...</a></p>
-                {% endfor %}
+                {% if site.categories.languages == null %}
+                    <h3>There are no languages post contents</h3>
+                {% else %}
+                    {% for categoryLanguages in site.categories.languages %}
+                        <h3>{{categoryLanguages.title}}</h3>
+                        <p><bd> {{categoryLanguages.date | date: "%b %-d, %Y"}}</bd></p>
+                        <p>{{ categoryLanguages.excerpt }}</p>
+                        <p><a href="#">Continue Reading...</a></p>
+                    {% endfor %}
+                {% endif %}
             </div>
 
             <div id="development" class="col-lg-8 col-lg-offset-2" style="display: none">
-                {% for category in site.categories.development %}
-                <p><img src="/assets/img/user.png" width="50px" height="50px"> <ba>Stanley Stinson</ba></p>
-                <p><bd>{{category.tag}} January 18, 2014</bd></p>
-                <h4>The Amazing Spiderman</h4>
-                <p><b>Spider-Man</b> is a fictional character, a comic book superhero that appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (cover-dated Aug. 1962). </p>
-                <p>Lee and Ditko conceived the character as an orphan being raised by his Aunt May and Uncle Ben, and as a teenager, having to deal with the normal struggles of adolescence in addition to those of a costumed crimefighter.</p>
-                <p><a href="blog01.html">Continue Reading...</a></p>
-                {% endfor %}
+                {% if site.categories.development == null %}
+                    <h3>There are no development post contents</h3>
+                {% else %}
+                    {% for categoryDevelopment in site.categories.development %}
+                        <h3>{{categoryDevelopment.title}}</h3>
+                        <p><bd> {{categoryDevelopment.date | date: "%b %-d, %Y"}}</bd></p>
+                        <p>{{ categoryDevelopment.excerpt }}</p>
+                        <p><a href="#">Continue Reading...</a></p>
+                    {% endfor %}
+                {% endif %}
             </div>
 
             <div id="Canada" class="col-lg-8 col-lg-offset-2" style="display: none">
-                {% for category in site.categories.Canada %}
-                <p><img src="/assets/img/user.png" width="50px" height="50px"> <ba>Stanley Stinson</ba></p>
-                <p><bd>{{category.tag}} January 18, 2014</bd></p>
-                <h4>The Amazing Spiderman</h4>
-                <p><b>Spider-Man</b> is a fictional character, a comic book superhero that appears in comic books published by Marvel Comics. Created by writer-editor Stan Lee and writer-artist Steve Ditko, he first appeared in Amazing Fantasy #15 (cover-dated Aug. 1962). </p>
-                <p>Lee and Ditko conceived the character as an orphan being raised by his Aunt May and Uncle Ben, and as a teenager, having to deal with the normal struggles of adolescence in addition to those of a costumed crimefighter.</p>
-                <p><a href="blog01.html">Continue Reading...</a></p>
-                {% endfor %}
+                {% if site.categories.Canada == null %}
+                    <h3>There are no Canada post contents</h3>
+                {% else %}
+                    {% for categoryCanada in site.categories.Canada %}
+                        <h3>{{categoryCanada.title}}</h3>
+                        <p><bd> {{categoryCanada.date | date: "%b %-d, %Y"}}</bd></p>
+                        <p>{{ categoryCanada.excerpt }}</p>
+                        <p><a href="#">Continue Reading...</a></p>
+                    {% endfor %}
+                {% endif %}
             </div>
         </div><!-- /row -->
     </div> <!-- /container -->
