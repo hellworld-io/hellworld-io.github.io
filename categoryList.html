@@ -33,6 +33,7 @@ layout: default
                 {% else %}
                     {% for categoryDaily in site.categories.daily %}
                         <h3>{{categoryDaily.title}}</h3>
+                        <h5>Tag : {{categoryDaily.tag}}</h5>
                         <p><bd> {{categoryDaily.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryDaily.excerpt }}</p>
                         <p><a href="#">Continue Reading...</a></p>
@@ -46,6 +47,7 @@ layout: default
                 {% else %}
                     {% for categoryBook in site.categories.book %}
                         <h3>{{categoryBook.title}}</h3>
+                        <h5>Tag : {{categoryBook.tag}}</h5>
                         <p><bd> {{categoryBook.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryBook.excerpt }}</p>
                         <p><a href="#">Continue Reading...</a></p>
@@ -59,6 +61,7 @@ layout: default
                 {% else %}
                     {% for categoryEnglish in site.categories.english %}
                         <h3>{{categoryEnglish.title}}</h3>
+                        <h5>Tag : {{categoryEnglish.tag}}</h5>
                         <p><bd> {{categoryEnglish.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryEnglish.excerpt }}</p>
                         <p><a href="#">Continue Reading...</a></p>
@@ -72,6 +75,7 @@ layout: default
                 {% else %}
                     {% for categoryLanguages in site.categories.languages %}
                         <h3>{{categoryLanguages.title}}</h3>
+                        <h5>Tag : {{categoryLanguages.tag}}</h5>
                         <p><bd> {{categoryLanguages.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryLanguages.excerpt }}</p>
                         <p><a href="#">Continue Reading...</a></p>
@@ -85,6 +89,7 @@ layout: default
                 {% else %}
                     {% for categoryDevelopment in site.categories.development %}
                         <h3>{{categoryDevelopment.title}}</h3>
+                        <h5>Tag : {{categoryDevelopment.tag}}</h5>
                         <p><bd> {{categoryDevelopment.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryDevelopment.excerpt }}</p>
                         <p><a href="#">Continue Reading...</a></p>
@@ -98,6 +103,7 @@ layout: default
                 {% else %}
                     {% for categoryCanada in site.categories.Canada %}
                         <h3>{{categoryCanada.title}}</h3>
+                        <h5>Tag : {{categoryCanada.tag}}</h5>
                         <p><bd> {{categoryCanada.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryCanada.excerpt }}</p>
                         <p><a href="#">Continue Reading...</a></p>
