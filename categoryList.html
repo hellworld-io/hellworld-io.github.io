@@ -36,7 +36,7 @@ layout: default
                         <h5>Tag : {{categoryDaily.tag}}</h5>
                         <p><bd> {{categoryDaily.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryDaily.excerpt }}</p>
-                        <p><a href="#">Continue Reading...</a></p>
+                        <p><a href="{{categoryDaily.url | prepend: site.baseurl}}">Continue Reading...</a></p>
                     {% endfor %}
                 {% endif %}
             </div>
@@ -50,7 +50,7 @@ layout: default
                         <h5>Tag : {{categoryBook.tag}}</h5>
                         <p><bd> {{categoryBook.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryBook.excerpt }}</p>
-                        <p><a href="#">Continue Reading...</a></p>
+                        <p><a href="{{categoryBook.url | prepend: site.baseurl}}">Continue Reading...</a></p>
                     {% endfor %}
                 {% endif %}
             </div>
