@@ -64,7 +64,7 @@ layout: default
                         <h5>Tag : {{categoryEnglish.tag}}</h5>
                         <p><bd> {{categoryEnglish.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryEnglish.excerpt }}</p>
-                        <p><a href="#">Continue Reading...</a></p>
+                        <p><a href="{{categoryEnglish.url | prepend: site.baseurl}}">Continue Reading...</a></p>
                     {% endfor %}
                 {% endif %}
             </div>
@@ -78,7 +78,7 @@ layout: default
                         <h5>Tag : {{categoryLanguages.tag}}</h5>
                         <p><bd> {{categoryLanguages.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryLanguages.excerpt }}</p>
-                        <p><a href="#">Continue Reading...</a></p>
+                        <p><a href="{{categoryLanguages.url | prepend: site.baseurl}}">Continue Reading...</a></p>
                     {% endfor %}
                 {% endif %}
             </div>
@@ -92,7 +92,7 @@ layout: default
                         <h5>Tag : {{categoryDevelopment.tag}}</h5>
                         <p><bd> {{categoryDevelopment.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryDevelopment.excerpt }}</p>
-                        <p><a href="#">Continue Reading...</a></p>
+                        <p><a href="{{categoryDevelopment.url | prepend: site.baseurl}}">Continue Reading...</a></p>
                     {% endfor %}
                 {% endif %}
             </div>
@@ -106,7 +106,7 @@ layout: default
                         <h5>Tag : {{categoryCanada.tag}}</h5>
                         <p><bd> {{categoryCanada.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryCanada.excerpt }}</p>
-                        <p><a href="#">Continue Reading...</a></p>
+                        <p><a href="{{categoryCanada.url | prepend: site.baseurl}}">Continue Reading...</a></p>
                     {% endfor %}
                 {% endif %}
             </div>
