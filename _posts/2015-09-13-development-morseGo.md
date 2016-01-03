@@ -34,4 +34,4 @@ a b
 ```
 
 # Where is it?
-[morseGo](https://github.com/hellworld-io/morseGo)
+![morseGo]({{ site.url }}/assets/icon/gitHub.png)[morseGo](https://github.com/hellworld-io/morseGo)
