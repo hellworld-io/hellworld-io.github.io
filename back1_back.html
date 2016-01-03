@@ -6,6 +6,23 @@ layout: default
 
   <!-- h1>Posts</h1 -->
 
+  {% for post in site.posts %}
+  {{post.tag}}
+  <div id="{{ post.categories }}" class="col-lg-8 col-lg-offset-2" style="display: block">
+    <ul>
+      <li>{{ post.tag }}</li>
+    </ul>
+  </div>
+  {% endfor %}
+
+  {% for post in site.posts %}
+  {{ post.date | date_to_string }}{{ post.title }}<br>
+  {{ post.categories }}
+  {{ post.tag }}
+  {% endfor %}
+
+
+
   <ul class="posts">
     {% for post in site.posts %}
       <li>
