@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- [TODO] List implement will change -->
 <script>
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -37,6 +38,7 @@ layout: default
                         <p><bd> {{categoryDaily.date | date: "%b %-d, %Y"}}</bd></p>
                         <p>{{ categoryDaily.excerpt }}</p>
                         <p><a href="{{categoryDaily.url | prepend: site.baseurl}}">Continue Reading...</a></p>
+                        <hr>
                     {% endfor %}
                 {% endif %}
             </div>

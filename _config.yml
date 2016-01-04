@@ -40,7 +40,7 @@ lsi: false
 
 permalink: pretty
 
-paginate: 10
+paginate: 5
 
 gems:
   - jekyll-redirect-from
