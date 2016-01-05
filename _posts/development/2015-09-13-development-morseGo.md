@@ -2,8 +2,9 @@
 layout: post
 title:  "morseGo"
 date:   2015-09-13
-categories: development
-tag: golang, project
+type: development
+category: project
+tag: golang 
 ---
 
 # Morse Code Golang CLI

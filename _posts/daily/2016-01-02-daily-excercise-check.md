@@ -2,8 +2,9 @@
 layout: post
 title:  "Daily Excercise check"
 date:   2016-01-02
-categories: daily
-tag: health
+type: daily
+category: health
+tag:
 ---
 
 # 매일매일 운동하기
