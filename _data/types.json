@@ -1,5 +1,5 @@
 {
-  "categories" :[
+  "types" :[
     {"id" : "daily", "desc" : "about daily activities"},
     {"id" : "book" , "desc" : "about reading book"},
     {"id" : "english" , "desc" : "about English"},
