@@ -41,6 +41,7 @@ lsi: false
 permalink: pretty
 
 paginate: 5
+paginate_path: "/types/:num"
 
 gems:
   - jekyll-redirect-from

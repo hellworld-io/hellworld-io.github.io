@@ -17,18 +17,15 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                {% if site.categories.daily == null %}
-                <h3>There are no daily post contents</h3>
-                {% else %}
-                {% for categoryDaily in site.categories.daily %}
-                <h3>{{categoryDaily.title}}</h3>
-                <h5>Tag : {{categoryDaily.tag}}</h5>
-                <p><bd> {{categoryDaily.date | date: "%b %-d, %Y"}}</bd></p>
-                <p>{{ categoryDaily.excerpt }}</p>
-                <p><a href="{{categoryDaily.url | prepend: site.baseurl}}">Continue Reading...</a></p>
-                <hr>
+                {% for post in paginator.posts %}
+                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                <p class="author">
+                    <span class="date">{{ post.date }}</span>
+                </p>
+                <div class="content">
+                    {{ post.content }}
+                </div>
                 {% endfor %}
-                {% endif %}
             </div>
         </div><!-- /row -->
     </div> <!-- /container -->

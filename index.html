@@ -5,18 +5,18 @@ layout: default
 
 	<div class="container pt">
 		<div class="row mt centered">
-			{% for cate in site.data.categories.categories limit: 3 %}
+			{% for type in site.data.types.types limit: 3 %}
 			<div class="col-lg-4">
-				<a class="zoom green" href="categoryList/?cate={{cate.id}}"><img class="img-responsive" src="/assets/img/{{cate.id}}.png" alt="{{cate.id}}" width="400" height="300" /></a>
-				<p>{{cate.id}}</p>
+				<a class="zoom green" href="{{site.baseurl}}/types/{{type.id}}"><img class="img-responsive" src="/assets/img/{{type.id}}.png" alt="{{type.id}}" width="400" height="300" /></a>
+				<h4>{{type.desc}}</h4>
 			</div>
 			{% endfor %}
 		</div><!-- /row -->
 		<div class="row mt centered">
-			{% for cate in site.data.categories.categories limit: 3 offset: 3 %}
+			{% for type in site.data.types.types limit: 3 offset: 3 %}
 			<div class="col-lg-4">
-				<a class="zoom green" href="categoryList?cate={{cate.id}}"><img class="img-responsive" src="/assets/img/{{cate.id}}.png" alt="{{cate.id}}" width="400" height="300"/></a>
-				<p>{{cate.id}}</p>
+				<a class="zoom green" href="{{type.id}}"><img class="img-responsive" src="/assets/img/{{type.id}}.png" alt="{{type.id}}" width="400" height="300"/></a>
+				<h4>{{type.desc}}</h4>
 			</div>
 			{% endfor %}
 		</div><!-- /row -->
