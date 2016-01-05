@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div id="grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <img src="/assets/img/daily.png" width="150" height="150">
+                <h2>{{site.data.types.types[0].id}}</h2>
+                <h4>{{site.data.types.types[0].desc}}</h4>
+            </div>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div>
+<div id="white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                {% if site.categories.daily == null %}
+                <h3>There are no daily post contents</h3>
+                {% else %}
+                {% for categoryDaily in site.categories.daily %}
+                <h3>{{categoryDaily.title}}</h3>
+                <h5>Tag : {{categoryDaily.tag}}</h5>
+                <p><bd> {{categoryDaily.date | date: "%b %-d, %Y"}}</bd></p>
+                <p>{{ categoryDaily.excerpt }}</p>
+                <p><a href="{{categoryDaily.url | prepend: site.baseurl}}">Continue Reading...</a></p>
+                <hr>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div>
