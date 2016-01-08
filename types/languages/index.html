@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div id="grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <img src="/assets/img/{{site.data.types.types[3].id}}.png" width="200" height="200">
+                <h2>{{site.data.types.types[3].id}}</h2>
+                <h4>{{site.data.types.types[3].desc}}</h4>
+            </div>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div>
+<div id="white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                {% include types_list.html type='languages' %}
+            </div>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div>
