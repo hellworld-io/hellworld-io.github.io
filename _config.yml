@@ -41,8 +41,8 @@ lsi: false
 permalink: pretty
 
 paginate: 5
-paginate_path: "/types/daily/:num"
-# paginate_path: "/types/book/:num"
+# paginate_path: "/_includes/:num"
+# paginate_path: "/types/:num"
 
 gems:
   - jekyll-redirect-from
