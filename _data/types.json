@@ -1,10 +1,10 @@
 {
   "types" :[
-    {"id" : "daily", "desc" : "about daily activities"},
-    {"id" : "book" , "desc" : "about reading book"},
-    {"id" : "english" , "desc" : "about English"},
-    {"id" : "languages" , "desc" : "about development languages"},
     {"id" : "development" , "desc" : "about my project"},
+    {"id" : "book" , "desc" : "about reading book"},
+    {"id" : "languages" , "desc" : "about development languages"},
+    {"id" : "english" , "desc" : "about English"},
+    {"id" : "daily", "desc" : "about daily activities"},
     {"id" : "Canada" , "desc" : "about Canada life"}
   ]
 }
