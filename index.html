@@ -7,7 +7,7 @@ layout: default
 		<div class="row mt centered">
 			{% for type in site.data.types.types limit: 3 %}
 			<div class="col-lg-4">
-				<a class="zoom green" href="{{site.baseurl}}/types/{{type.id}}"><img class="img-responsive" src="/assets/img/{{type.id}}.png" alt="{{type.id}}" width="400" height="300" /></a>
+				<a class="zoom green" href="{{site.baseurl}}/types/{{type.id}}/"><img class="img-responsive" src="/assets/img/{{type.id}}.png" alt="{{type.id}}" width="400" height="300" /></a>
 				<h4>{{type.desc}}</h4>
 			</div>
 			{% endfor %}
@@ -15,7 +15,7 @@ layout: default
 		<div class="row mt centered">
 			{% for type in site.data.types.types limit: 3 offset: 3 %}
 			<div class="col-lg-4">
-				<a class="zoom green" href="{{type.id}}"><img class="img-responsive" src="/assets/img/{{type.id}}.png" alt="{{type.id}}" width="400" height="300"/></a>
+				<a class="zoom green" href="{{site.baseurl}}/types/{{type.id}}/"><img class="img-responsive" src="/assets/img/{{type.id}}.png" alt="{{type.id}}" width="400" height="300"/></a>
 				<h4>{{type.desc}}</h4>
 			</div>
 			{% endfor %}
