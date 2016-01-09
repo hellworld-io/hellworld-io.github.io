@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Daily Excercise check"
-date:   2016-01-08
+date:   2016-01-07
 type: daily
 category: health
 tag:
