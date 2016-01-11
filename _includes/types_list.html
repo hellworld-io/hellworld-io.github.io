@@ -1,8 +1,8 @@
 {% for types in site.posts %}
     {% if types.type == include.type %}
         <h3>{{types.title}}</h3>
-        <h5>Tag : {{types.tag}}</h5>
         <h5>Category : {{types.category}}</h5>
+        <h5>Tag : {{types.tag}}</h5>
         <p><bd> {{types.date | date: "%b %-d, %Y"}}</bd></p>
         <p>{{ types.excerpt }}</p>
         <p><a href="{{types.url | prepend: site.baseurl}}">Continue Reading...</a></p>
