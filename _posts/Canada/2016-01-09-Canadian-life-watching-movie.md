@@ -3,7 +3,7 @@ layout: post
 title:  "[Canadian Life] 첫 영화"
 date:   2016-01-09
 type: Canada
-category: daily
+category: diary
 tag: movie
 ---
 

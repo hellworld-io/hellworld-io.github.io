@@ -3,7 +3,7 @@ layout: post
 title:  "[Canadian Life] 눈 싸대기 맞았음"
 date:   2016-01-10
 type: Canada
-category: daily
+category: diary
 tag: snow, winter
 ---
 

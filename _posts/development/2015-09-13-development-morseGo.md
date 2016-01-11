@@ -7,17 +7,17 @@ category: project
 tag: golang 
 ---
 
-# Morse Code Golang CLI
+## Morse Code Golang CLI
 
-## Simple little command line converting Morse Code written in Go
+### Simple little command line converting Morse Code written in Go
 
-# What Morse Code?
+## What Morse Code?
 
-## [Morse Code](https://en.wikipedia.org/wiki/Morse_code)
+### [Morse Code](https://en.wikipedia.org/wiki/Morse_code)
 
-# How to use it
+## How to use it
 
-## This is able to convert from words to morse code, or convert from morse code to words.
+### This is able to convert from words to morse code, or convert from morse code to words.
 ```
 ./morseGo -h
 Usage of ./morseGo:
@@ -34,5 +34,5 @@ $ ./morseGo -mta ".-  -..."
 a b
 ```
 
-# Where is it?
+## Where is it?
 ![morseGo]({{ site.url }}/assets/icon/Code Fork-30.png) [morseGo](https://github.com/hellworld-io/morseGo)
