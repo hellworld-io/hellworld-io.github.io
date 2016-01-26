@@ -24,10 +24,10 @@ tag:
 - [x] 운동
 - [ ] 방과후 영어공부
 	- [ ] IELTS
-	- [ ] Listening
+	- [x] Listening
 - [x] 개인 프로젝트
-	- [x] bMark
-	- [ ] nBaseball
+	- [ ] bMark
+	- [x] nBaseball
 - [ ] 개발서적 읽고 정리하기
 	- [ ] 처음 시작하는 프로그래밍
 
