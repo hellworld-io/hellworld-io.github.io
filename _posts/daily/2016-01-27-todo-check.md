@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TODO check"
+title:  "TODO check" 
 date:   2016-01-27
 type: daily
 category: TODO
