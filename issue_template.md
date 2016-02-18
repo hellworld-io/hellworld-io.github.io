@@ -1,8 +1,8 @@
 # Today, done list
 
 ## Daily Posts
-- [ ] post
+* post
 
 ## nBaseball
-- [ ] code
+* code
 
