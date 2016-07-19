@@ -2,7 +2,7 @@
 layout: post
 title:  "maven search"
 date:   2016-07-10
-type: languages
+type: devlopment
 category: devlopment
 tag: java
 ---
