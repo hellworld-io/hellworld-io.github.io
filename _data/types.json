@@ -1,6 +1,6 @@
 {
   "types" :[
-    {"id" : "development" , "desc" : "about my project"},
+    {"id" : "development" , "desc" : "about developments"},
     {"id" : "book" , "desc" : "about reading book"},
     {"id" : "languages" , "desc" : "about development languages"},
     {"id" : "english" , "desc" : "about English"},
