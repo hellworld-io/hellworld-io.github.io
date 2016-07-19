@@ -30,8 +30,7 @@ tag: java dev
 
 ```
 	1. vi /etc/sysconfig/iptables
-	2. -A INPUT -s 103.60.126.254/32 -m state --state NEW -j ACCEPT
-COMMIT
+	2. -A INPUT -s 103.60.126.254/32 -m state --state NEW -j ACCEPT COMMIT
 	3. -A RH-Firewall-1-INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 	4. service iptables restart
 ```
@@ -52,15 +51,19 @@ COMMIT
 * Copy Binary Distributions link url
 	* Example ![Example]({{ site.url}}/assets/img/postImg/copy_tomcat_binary_url.png)
 * wget binary file
+
 ```
 	wget http://mirrors.koehn.com/apache/tomcat/tomcat-8/v8.0.5/bin/apache-tomcat-8.0.5.tar.gz
 ```
+
 * unzip tar.gz
+
 ```
 	tar -zxf /tmp/apache-tomcat-8.0.5.tar.gz -C /opt/tomcat
 ```
 
 * Create User
+
 ```
 	$ groupadd tomcat
     $ useradd -g tomcat tomcat
@@ -68,6 +71,7 @@ COMMIT
 ```
 
 * Add Tomcat8 Service
+
 ```
 	1. vi /etc/init.d/tomcat8
 	2. Insert
@@ -110,6 +114,7 @@ COMMIT
 ```
 
 * Create Tomcat User for tomcat manager
+
 ```
 	1. vi /opt/tomcat/conf/tomcat-users.xml
 	2. Insert in tomcat-users tag
