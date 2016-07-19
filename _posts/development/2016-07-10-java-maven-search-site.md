@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "maven search"
-date:   2015-02-01
+date:   2016-07-10
 type: languages
 category: language
 tag: java
