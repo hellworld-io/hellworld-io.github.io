@@ -27,6 +27,7 @@ tag: java dev
 	/etc/httpd/conf/httpd.conf
 ```
 * firewall open
+
 ```
 	1. vi /etc/sysconfig/iptables
 	2. -A INPUT -s 103.60.126.254/32 -m state --state NEW -j ACCEPT
@@ -58,12 +59,14 @@ COMMIT
 ```
 	tar -zxf /tmp/apache-tomcat-8.0.5.tar.gz -C /opt/tomcat
 ```
+
 * Create User
 ```
 	$ groupadd tomcat
     $ useradd -g tomcat tomcat
     $ passwd tomcat
 ```
+
 * Add Tomcat8 Service
 ```
 	1. vi /etc/init.d/tomcat8
@@ -105,6 +108,7 @@ COMMIT
 		chkconfig --level 2345 tomcat8 on
 		service tomcat8 start
 ```
+
 * Create Tomcat User for tomcat manager
 ```
 	1. vi /opt/tomcat/conf/tomcat-users.xml
