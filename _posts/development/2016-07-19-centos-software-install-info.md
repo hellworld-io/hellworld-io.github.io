@@ -126,12 +126,12 @@ tag: java dev
 ```bash
 	1. yum install vsftpd
 	2. vi /etc/vsftpd/vsftpd.conf
-	- anoymous_enable=NO
+		- anoymous_enable=NO
 	3. service iptables restart
 	4. vi /etc/sysconfig/iptables
-	- Insert
-		-A INPUT -m state --state NEW -m tcp -p tcp --dport 20 -j ACCEPT
-		-A INPUT -m state --state NEW -m tcp -p tcp --dport 21 -j ACCEPT
+		- Insert
+			-A INPUT -m state --state NEW -m tcp -p tcp --dport 20 -j ACCEPT
+			-A INPUT -m state --state NEW -m tcp -p tcp --dport 21 -j ACCEPT
 	5. service iptables restart
 	6. service vsftpd start
 	7. chkconfig --level 2345 vsftpd on
