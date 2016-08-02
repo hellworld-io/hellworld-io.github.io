@@ -123,7 +123,7 @@ tag: java dev
 ```
 
 ## FTP
-``` bash
+```bash
 	1. yum install vsftpd
 	2. vi /etc/vsftpd/vsftpd.conf
 		- anoymous_enable=NO
